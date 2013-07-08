@@ -1,9 +1,17 @@
 var express = require('express');
-var fs = require('fs'); 
-var app = express.createServer(express.logger());
-var buf = new Buffer(256);
-var content = buf.toString(fs.readFileSync('/home/bitstarter/index.html'));
 
+var app = express.createServer(express.logger());
+
+fs = require('fs');
+var content ;
+var data;
+fs.readFile('/home/sensei/bitstarter/index.html', 'utf8', function (err,data) {
+  if (err) {
+    return console.log(err);
+  }
+  content = data;
+
+});
 
 
 app.get('/', function(request, response) {
