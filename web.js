@@ -15,7 +15,7 @@ fs.readFile('/home/sensei/bitstarter/index.html', 'utf8', function (err,data) {
 
 
 app.get('/', function(request, response) {
-  response.send(content);
+  response.send('HI');
 });
 
 var port = process.env.PORT || 5000;
