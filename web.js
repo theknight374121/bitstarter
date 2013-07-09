@@ -7,7 +7,7 @@ fs.readFile('/home/sensei/bitstarter/index.html', 'utf8', function (err,data) {
   if (err) {
     return console.log(err);
   }
-Console.log(data);
+   console.log(data);
 
 
 });
