@@ -1,0 +1,12 @@
+fs = require('fs');
+var content ;
+var data;
+fs.readFile('/home/sensei/bitstarter/index.html', 'utf8', function (err,data) {
+  if (err) {
+    return console.log(err);
+  }
+  content = data;
+console.log(content);
+});
+
+
